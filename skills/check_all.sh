@@ -26,4 +26,8 @@ python3 -m py_compile \
   "${ROOT_DIR}/kairos-lite/scripts/job_spec.py" \
   "${ROOT_DIR}/xquik-monitoring/scripts/xquik_monitoring_context.py"
 
+python3 -m unittest discover \
+  -s "${ROOT_DIR}/verification-gate/tests" \
+  -p "test_*.py"
+
 echo "All skill bundles passed basic checks."
