@@ -61,6 +61,9 @@ Store useful details so the agent can keep track of what matters.
 ### Verification
 Check results before you accept them.
 
+### Xquik Monitoring
+Turn Xquik X data into short, source-linked monitoring handoffs.
+
 ### Multi-Agent Coordination
 Help different agents share work without losing the thread.
 

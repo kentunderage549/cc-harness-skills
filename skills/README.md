@@ -1,6 +1,6 @@
 # Publishing Guide
 
-This directory contains the public release bundles for the six portable `CC`-derived skills.
+This directory contains the public release bundles for portable `CC`-derived skills.
 
 ## Recommended Naming
 
@@ -18,6 +18,7 @@ Recommended public skill names:
 | `swarm-coordinator` | CC Swarm Coordinator |
 | `structured-context-compressor` | CC Context Compressor |
 | `kairos-lite` | CC Kairos Lite |
+| `xquik-monitoring` | Xquik Monitoring |
 
 Keep the slugs stable. Put branding in the display name, not the directory name.
 
