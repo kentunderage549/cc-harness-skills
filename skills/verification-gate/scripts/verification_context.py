@@ -25,8 +25,8 @@ def build_context(repo: Path) -> dict[str, Any]:
     return {
         "repo": str(repo),
         "status": run_git(repo, "status", "--short"),
-        "diff_stat": run_git(repo, "diff", "--stat"),
-        "changed_files": run_git(repo, "diff", "--name-only").splitlines(),
+        "diff_stat": run_git(repo, "diff", "HEAD", "--stat"),
+        "changed_files": run_git(repo, "diff", "HEAD", "--name-only").splitlines(),
         "head": run_git(repo, "rev-parse", "--short", "HEAD"),
         "branch": run_git(repo, "rev-parse", "--abbrev-ref", "HEAD"),
     }
